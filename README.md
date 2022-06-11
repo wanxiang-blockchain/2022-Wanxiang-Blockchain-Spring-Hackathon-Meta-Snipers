@@ -1,4 +1,3 @@
-# 2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers
 # Meta Tree
 本项目是一款致力于零碳元宇宙的社交养成类游戏。 <br> 
 长期以来，不环保成为推广区块链和元宇宙的一个阻碍。解铃还须系铃人，如何用区块链的方案解决区块链的环保问题值得我们探索。<br> 
