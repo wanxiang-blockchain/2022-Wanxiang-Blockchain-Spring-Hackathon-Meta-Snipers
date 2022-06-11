@@ -1,0 +1,36 @@
+@primaryColor: #3ab795;
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url(~@/assets/fonts/FontsFree-Net-SFProText-Regular.ttf)
+    format('truetype');
+}
+body {
+  background-color: #fafafa !important;
+  font-family: 'SF Pro Text';
+}
+:root:root {
+  --adm-font-family: 'SF Pro Text';
+  --adm-color-primary: @primaryColor;
+  --adm-button-border-radius: 8px;
+  .mf-round-button {
+    border: 2px solid #ffffff;
+    border-radius: 72px;
+    padding: 20px 60px;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .back {
+    position: absolute;
+    left: 24px;
+    top: 100px;
+    width: 24px;
+  }
+  .adm-page-indicator-dot {
+    width: 25px;
+    height: 10px;
+  }
+  .adm-page-indicator-dot-active {
+    width: 35px;
+    height: 10px;
+  }
+}
