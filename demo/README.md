@@ -1,2 +1,2 @@
-# demo视频为MetaTree-Demo.mp4
-#在线体验url：https://metaforest.fun/
+-使用手机钱包APP访问我们的DAPP：https://metaforest.fun/
+-查看DEMO视频：本文件夹MetaTree-Demo.mp4
