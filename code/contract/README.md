@@ -1,4 +1,4 @@
-## 1 Initialization
+## 1 初始化
 
 ### 1.1 Installation
 ```
@@ -8,56 +8,56 @@ or
 ```
 $ yarn
 ```
-install all packages we need.
+安装依赖的包
 
 
 ### 1.2 Set env && secret
-.env file will be read to set env like this:
+.env 文件设置如下:
 ```
-NFT_NAME="MetaForest"
+NFT_NAME="MetaTree"
 NFT_SYMBOL="MFT"
-NFT_BASE_URL="https://meta-forest.com/"
+NFT_BASE_URL="https://nftstorage.link/ipfs/"
 MAX_NFT_CAN_BUY=8000
 PRICE=300000000000000
 ADMIN_USER="0x85FCaa731b57f27C03E631592DCc697F4917c358"
 ```
-.secret file will be read to set accounts.
+.secret 设置密钥文件.
 
 ### 1.3 Compile
 ```
 truffle compile --all
 ```
-compile all contracts in contract folder.
+编译合约
 
 ### 1.4 Migration
 ```
 truffle migrate
 ```
-the command line will deploy you contract according to your script file in migrations.
+该命令会使用设置的密钥文件部署合约.
 
 ### 1.5 Test
 ```
 truffle test ./test/***.js
 ```
-In the test file directory, you can write javascript scripts to suit your needs. You can run the script file to check the functionality.
+在test文件夹下是合约相关的测试用例，测试用例覆盖了合约的所有场景
 
 
 ### 1.6 Network Config
-in truffle.config.js, you can find networks. If you want to add new network, just like this:
+网络配置如下:
 ```
 localhost: {
     network_id: "*",       // Any network (default: none)
     provider: () => new HDWalletProvider(privateKeys, `http://localhost:8545`),
 }
 ```
-notice, PrivateKeys are read from the.secret file.So you need to write some private keys in .secret file.Don't worry, this file will not be leaked, and no one will get your account private key.
+从.secret文件中读取私钥，该文件只会在本地，私钥不会泄露
 
 
-## 2 Contract introduction
-### 2.1 Architecture
+## 2 合约介绍
+### 2.1 架构
 ![](https://github.com/wanxiang-blockchain/2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers/blob/main/code/contract/metaforest_uml.png)
 
-### 2.2 Overview
+### 2.2 总览
 本项目是一个由5个合约组成的二进制智能合约系统，包括基础合约：AccessControl, CarbonEnergy, Tree，MetaForestCore，CarbonEmissoin；<br>
 
 #### 2.2.1 CarbonEmission
@@ -100,7 +100,7 @@ notice, PrivateKeys are read from the.secret file.So you need to write some priv
 ##### 2、function totalBalanceOf(address account) public view  returns (uint256)<br>   
 功能：获取用户总的碳排放<br>  
 ##### 3、function lastBalanceOf(address account) public view  returns (uint256)<br>
-功能：获取用户昨天的碳排放。如果近6600个块高没有增加碳排放，将返回0<br>  
+功能：获取用户昨天的碳排放。如果昨天（通过区块数量判断一天）没有增加碳排放，将返回0<br>  
 ##### 4、function lastUpdateOf(address account) public view  returns (uint256)<br>
 功能：获取最近一次更新碳排放的块高<br>
 
