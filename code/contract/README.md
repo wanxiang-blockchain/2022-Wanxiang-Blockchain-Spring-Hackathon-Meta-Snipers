@@ -58,23 +58,22 @@ notice, PrivateKeys are read from the.secret file.So you need to write some priv
 ![](https://gitlab.fuxi.netease.com:8081/innovative-business/meta-forest/meta-forest-eth-shanghai-hackathon/-/blob/master/metaforest_uml.png)
 
 ### 2.2 Overview
-我们首先创建了CarbonEmission基础协议，该协议记录了用户链上交易产生的碳排放量；   
-接着，我们以CarbonEmission为基础，在上层创建了Meta Forest游戏。Meta Forest是一个由许多合约组成的二进制智能合约系统，包括基础合约：AccessControl, CarbonEnergy, Tree；核心合约为MetaForestCore；<br>
+本项目是一个由5个合约组成的二进制智能合约系统，包括基础合约：AccessControl, CarbonEnergy, Tree，MetaForestCore，CarbonEmissoin；<br>
 
 #### 2.2.1 CarbonEmission
-统计用户账户/合约账户在链上交易产生的碳排放量;<br>
+统计Tree NFT所有者（可以是用户账户，也可以是合约账户）在链上交易产生的碳排放量;<br>
 
 #### 2.2.2 MetaForestCore
-定义了减碳游戏的核心逻辑，包括认养树、捐赠、浇水、毒气攻击等玩法；<br>
+定义了减碳游戏的核心逻辑，包括免费种树、捐款买树、浇水、升级、治疗、步行、偷能量、毒气攻击等玩法；<br>
 
 #### 2.2.3 AccessControl
-实现基于角色的灵活权限许可方案，保障合约的安全访问<br>
+实现基于角色的灵活权限许可方案，管理所有合约的权限，保障合约的安全访问。未来合约的治理权限都会交给社区和零碳联盟代表；<br>
 
 #### 2.2.4 CarbonEnergy
-是一个标准的ERC20代币合约，CarbonEnergyToken（CET）可以在用户间自由流通<br>
+是一个标准的ERC20代币合约，CarbonEnergyToken（CET）可以在用户间自由流通；<br>
 
 #### 2.2.5 Tree
-是一个标准的ERC721的NFT合约<br>
+是一个符合ERC721标准的可变NFT合约，在不同的不健康值和成长值下会返回不同的元数据URL；<br>
 
 ### 2.3 Metadata
 我们将树NFT的元数据存储在IPFS上，CID索引如下：<br>
