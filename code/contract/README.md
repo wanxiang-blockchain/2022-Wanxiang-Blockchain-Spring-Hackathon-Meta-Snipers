@@ -55,13 +55,13 @@ notice, PrivateKeys are read from the.secret file.So you need to write some priv
 
 ## 2 Contract introduction
 ### 2.1 Architecture
-https://github.com/wanxiang-blockchain/2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers/blob/main/code/contract/metaforest_uml.png
+![](https://github.com/wanxiang-blockchain/2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers/blob/main/code/contract/metaforest_uml.png)
 
 ### 2.2 Overview
 本项目是一个由5个合约组成的二进制智能合约系统，包括基础合约：AccessControl, CarbonEnergy, Tree，MetaForestCore，CarbonEmissoin；<br>
 
 #### 2.2.1 CarbonEmission
-统计Tree NFT所有者（可以是用户账户，也可以是合约账户）在链上交易产生的碳排放量;<br>
+统计Tree NFT所有者（可以是用户账户，也可以是合约账户）在链上交易产生的碳排放量；<br>
 
 #### 2.2.2 MetaForestCore
 定义了减碳游戏的核心逻辑，包括免费种树、捐款买树、浇水、升级、治疗、步行、偷能量、毒气攻击等玩法；<br>
