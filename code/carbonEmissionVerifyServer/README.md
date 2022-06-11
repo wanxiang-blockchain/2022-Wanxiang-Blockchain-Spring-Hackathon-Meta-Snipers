@@ -2,18 +2,18 @@
 
 ### Main functions:
 
-- Server counts the gas cost of each account transactions on the blockchain in every 6600 block heights, and calculates the WEB3 carbon emissions of each account, according to the carbon emission calculation standard (account carbon emission = account total gas cost/total gas cost of the entire network _ computing power of the entire network _ unit Calculate the power consumption of computing power \* carbon emissions per unit of power consumption),Currently it is MOCK processing;
-- Using Admin account in Carbon emission contract, carbon emission in every account will be written in contract.
-- Count walking kilometers of users, calculating the carbon reduction in the account according to calculation standard;
-- Using the Admin account of the Carbon energy contract, mint CET to the user according to the user's carbon reduction;
+- 服务端每天定时统计TREE NFT所有者账户的碳排放量，碳排放量的标准为：账户碳排放量 = 账户消耗的gas/整个网络消耗的gas * 整个网络消耗的电力* 一度电排放的二氧化碳，目前该数据为MOCK;
+- 服务端操作admin账户，将每个账户的碳排放量写到CarbonEmission合约种；
+- 服务端统计玩家的步行公里数，根据VSC标准计算减碳量;
+- 服务端操作CabonEnergy合约的admin账户，根据用户的减碳量铸造等量CET转到玩家账户；
 
 ### TODO
 
-- Authentication logic through SIWE (Sign-In with Ethereum)
-- Security protection of the interface. e.g. replay attack
-- More
+- 使用SIWE(Sign-In with Ethereum)认证逻辑 
+- 接口安全保护，比如重放攻击
+- 更多
 
-### Environment
+### 环境
 
 Nodejs > 14
 
@@ -30,7 +30,7 @@ otherwise use **npm**
 - `ENERGY_ADDRESS`: carbon credit contract address
 - `EMISSION_ADDRESS`: carbon emission contract address
 
-### initialization
+### 初始化
 
 ```
 yarn install // install dependencies
