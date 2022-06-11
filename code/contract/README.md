@@ -55,7 +55,7 @@ notice, PrivateKeys are read from the.secret file.So you need to write some priv
 
 ## 2 Contract introduction
 ### 2.1 Architecture
-![](https://gitlab.fuxi.netease.com:8081/innovative-business/meta-forest/meta-forest-eth-shanghai-hackathon/-/blob/master/metaforest_uml.png)
+https://github.com/wanxiang-blockchain/2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers/blob/main/code/contract/metaforest_uml.png
 
 ### 2.2 Overview
 本项目是一个由5个合约组成的二进制智能合约系统，包括基础合约：AccessControl, CarbonEnergy, Tree，MetaForestCore，CarbonEmissoin；<br>
