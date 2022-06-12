@@ -7,7 +7,7 @@
 # 如何体验我们的项目<br>
 使用钱包APP体验我们的DAPP: https://metaforest.fun/  <br>
 查看DEMO视频：<br>
-查看我们的代码:https://github.com/metaforest-n?tab=repositories <br>
+查看我们的代码:https://github.com/wanxiang-blockchain/2022-Wanxiang-Blockchain-Spring-Hackathon-Meta-Snipers/tree/main/code <br>
 部署在Nervos二层网络Godwoken上的合约地址: <br>
 1) Tree address: 0xE298Acf9EC24283D359505182Ec6F323b6B68e37 <br> 
 2) CarbonEnergy address: 0xEAc9FE29C9bfbc9B5ac17c72ae3319aA08Af4d30 <br> 
